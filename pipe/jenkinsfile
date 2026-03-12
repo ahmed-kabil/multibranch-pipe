@@ -3,9 +3,9 @@ pipeline{
     stages{
         stage("first stage"){
             steps{
-                sh "mkdir main"
-                dir("main"){
-                    echo hi from main > hi.txt
+                sh "mkdir test"
+                dir("test"){
+                    echo hi from test > hi.txt
                 }
             }
         }
