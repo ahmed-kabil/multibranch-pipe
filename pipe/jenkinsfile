@@ -5,7 +5,7 @@ pipeline{
             steps{
                 sh "mkdir prod"
                 dir("prod"){
-                    echo hi from prod > hi.txt
+                  sh "echo hi from prod > hi.txt"  
                 }
             }
         }
